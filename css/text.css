@@ -7411,7 +7411,7 @@ header#navbar {
 #block-tariffs {
     padding: 160px 0 90px;
     font-family: Montserrat;
-    background: url(/themes/bootstrap_dc/css/../images/D-background-opacity.svg) no-repeat right top, #fff;
+    background: url(/img/D-background-opacity.svg) no-repeat right top, #fff;
     background-size: 58%
 }
 
