@@ -733,7 +733,7 @@
         left: 0;
         width: 13px;
         height: 10px;
-        background: url(https://antonbiluta.github.io/themes/bootstrap_dc/css/../images/checkmark.svg) no-repeat center;
+        background: url(/img/checkmark.svg) no-repeat center;
         background-size: contain;
     }
     .tariff-footer-btn {
@@ -1639,6 +1639,26 @@
     .blog.keys-1 .keys-content, .blog.keys-1 .keys-img {
         display: none;
     }
+
+    .inverse .blog.keys-1:nth-of-type(4n+1) .keys-wrapper {
+        background: none!important;
+    }
+    .inverse .blog.keys-1:nth-of-type(4n+1) .keys-wrapper:before {
+        display: none;
+    }
+    .inverse .blog.keys-1:nth-of-type(4n+1) .keys-content, .inverse .blog.keys-1:nth-of-type(4n+1) .keys-img {
+        display: block;
+    }
+    .inverse .blog.keys-1:nth-of-type(4n+1) .keys-header {
+        margin-top: 40px;
+    }
+    .inverse .blog.keys-1:nth-of-type(4n+1) .keys-header h2 a {
+        color: #050c33;
+    }
+    .inverse .blog.keys-1:nth-of-type(4n+1) .keys-date {
+        color: #050c33;
+    }
+
     .social-links {
         margin-bottom: 15px;
     }

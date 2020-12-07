@@ -1505,22 +1505,22 @@
     .blog.keys-1 .keys-content, .blog.keys-1 .keys-img {
         display: none;
     }
-    .inverse .blog.keys-1:nth-of-type(4n+2) .keys-wrapper {
+    .inverse .blog.keys-1:nth-of-type(4n+1) .keys-wrapper {
         background: none!important;
     }
-    .inverse .blog.keys-1:nth-of-type(4n+2) .keys-wrapper:before {
+    .inverse .blog.keys-1:nth-of-type(4n+1) .keys-wrapper:before {
         display: none;
     }
-    .inverse .blog.keys-1:nth-of-type(4n+2) .keys-content, .inverse .blog.keys-1:nth-of-type(4n+2) .keys-img {
+    .inverse .blog.keys-1:nth-of-type(2n+1) .keys-content, .inverse .blog.keys-1:nth-of-type(2n+1) .keys-img {
         display: block;
     }
-    .inverse .blog.keys-1:nth-of-type(4n+2) .keys-header {
+    .inverse .blog.keys-1:nth-of-type(4n) .keys-header {
         margin-top: 40px;
     }
-    .inverse .blog.keys-1:nth-of-type(4n+2) .keys-header h2 a {
+    .inverse .blog.keys-1:nth-of-type(4n) .keys-header h2 a {
         color: #050c33;
     }
-    .inverse .blog.keys-1:nth-of-type(4n+2) .keys-date {
+    .inverse .blog.keys-1:nth-of-type(4n) .keys-date {
         color: #050c33;
     }
     .social-links {
