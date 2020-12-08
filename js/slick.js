@@ -79,16 +79,4 @@ $('#slick-views-our-clients-attachment-1-3-slider').slick({
         }]
 });
 
-Drupal.behaviors.testimonials = {
-    attach: function (context, settings) {
 
-        $('#slick-views-testimonials-block-1-1-slider').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-            var i = (currentSlide ? currentSlide : 0) + 1;
-            var i = i > 10 ? i : '0' + i;
-            var count = slick.slideCount > 10 ? slick.slideCount : '0' + slick.slideCount;
-
-            $(this).find('.slick-slide-num').html('<span class="slick-slide-num-current">' + i + '</span> / ' + count);
-
-        });
-    }
-};

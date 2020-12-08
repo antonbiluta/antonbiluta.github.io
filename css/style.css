@@ -1,10 +1,11 @@
-/*! CSS Used from: Embedded */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 .social-links-wrapper {
     display: none!important;
 }
-
-/*! CSS Used from: https://antonbiluta.github.io/css/navhead.css ; media=all */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 
 @media all {
     .slick-slider {
@@ -88,8 +89,6 @@
     }
 }
 
-/*! CSS Used from: https://antonbiluta.github.io/css/text.css ; media=all */
-
 @media all {
     body {
         position: relative;
@@ -154,7 +153,7 @@
         box-sizing: border-box;
     }
     body {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         line-height: 1.42857143;
         color: #333;
@@ -511,7 +510,7 @@
         overflow: visible;
     }
     body {
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
     }
     #navbar {
         position: absolute;
@@ -553,7 +552,7 @@
     }
     #navbar .navbar-nav>li>a {
         padding: 0;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -561,6 +560,12 @@
         color: #fff;
         border-bottom: 3px solid transparent;
         transition: border-color 400ms;
+    }
+    #navbar .navbar-nav>li>a.phone{
+        font-size: 18px;
+    }
+    #navbar .navbar-nav>li>a.lang{
+        font-size: 14px;
     }
     #navbar .navbar-nav>li>a:hover {
         border-color: #f14d34;
@@ -581,6 +586,16 @@
     .navbar-default .navbar-nav>li>a:focus {
         color: #fff;
     }
+
+    @media (max-width: 1200px){
+        #navbar .navbar-nav>li>a.phone{
+            display: none;
+        }
+        #navbar .navbar-nav>li>a.lang{
+            font-size: 14px;
+        }
+    }
+
     @media (max-width:767px) {
         #navbar {
             position: fixed;
@@ -617,6 +632,12 @@
             padding: 8px 20px;
             border-bottom: 1px solid #312a2a;
         }
+        #navbar .navbar-nav>li>a.phone{
+            font-size: 12px;
+        }
+        #navbar .navbar-nav>li>a.lang{
+            font-size: 12px;
+        }
         #navbar .navbar-nav>li:last-of-type>a {
             border: 0;
         }
@@ -643,8 +664,8 @@
     }
     #block-tariffs {
         padding: 160px 0 90px;
-        font-family: Montserrat;
-        background: url(https://antonbiluta.github.io/img/D-background-opacity.svg) no-repeat right top, #fff;
+        font-family: 'Montserrat', sans-serif;
+        background: url(/img/D-background-opacity.svg) no-repeat right top, #fff;
         background-size: 58%;
     }
     #block-tariffs .block-title {
@@ -812,7 +833,7 @@
         position: relative;
         padding: 130px 0 60px;
         color: #fff;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
     }
     .block-main:before {
         content: "";
@@ -822,7 +843,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: url(https://antonbiluta.github.io/themes/bootstrap_dc/css/../images/druplicon.svg) no-repeat left top;
+        background: url(/img/druplicon.svg) no-repeat left top;
         background-color: rgba(0, 0, 0, .8);
         z-index: 10;
     }
@@ -924,10 +945,10 @@
         margin-top: -22px;
     }
     footer {
-        background: linear-gradient(254.72deg, rgba(255, 255, 255, .276) -114.85%, rgba(255, 255, 255, 0) 69.04%), url('https://antonbiluta.github.io/img/D-flying.svg') no-repeat top center, url('https://antonbiluta.github.io/img/D-footer.svg') no-repeat bottom right, #040613;
+        background: linear-gradient(254.72deg, rgba(255, 255, 255, .276) -114.85%, rgba(255, 255, 255, 0) 69.04%), url('/img/D-flying.svg') no-repeat top center, url('/img/D-footer.svg') no-repeat bottom right, #040613;
         padding: 117px 0 54px;
         color: #fff;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
     }
     #block-copyright {
         position: static;
@@ -989,7 +1010,7 @@
         display: block;
         width: 18px;
         height: 18px;
-        background: url(https://antonbiluta.github.io/img/phone.svg) no-repeat center;
+        background: url(/img/phone.svg) no-repeat center;
         background-size: contain;
         position: absolute;
         left: 3px;
@@ -1004,7 +1025,7 @@
         display: block;
         width: 24px;
         height: 18px;
-        background: url(https://antonbiluta.github.io/img/mail.svg) no-repeat center;
+        background: url(/img/mail.svg) no-repeat center;
         background-size: contain;
         position: absolute;
         left: 0;
@@ -1092,7 +1113,7 @@
         display: block;
         width: 21px;
         height: 21px;
-        background: url('https://antonbiluta.github.io/img/checked-icon.svg') no-repeat center;
+        background: url('/img/checked-icon.svg') no-repeat center;
         background-size: contain;
         transition: opacity 200ms, transform 400ms;
         transform: rotateZ(-30deg);
@@ -1129,7 +1150,7 @@
     }
     .competencies {
         padding: 100px 0;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
     }
     .competencies h2 {
         font-weight: bold;
@@ -1159,7 +1180,7 @@
         position: absolute;
         width: 115px;
         height: 70px;
-        background: url(https://antonbiluta.github.io/themes/bootstrap_dc/css/../images/icon-bg.svg) no-repeat center;
+        background: url(/img/icon-bg.svg) no-repeat center;
         background-size: contain;
         left: -54px;
         bottom: -4px;
@@ -1170,7 +1191,7 @@
         color: #4f5a73;
     }
     .advantages {
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
     }
     .advantages h2 {
         margin-bottom: 55px;
@@ -1232,7 +1253,7 @@
         padding: 380px 0 150px;
         position: relative;
         background: linear-gradient(254.72deg, rgba(255, 255, 255, .276) -114.85%, rgba(255, 255, 255, 0) 69.04%), #040613;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         color: #fff;
     }
     .expertise:before {
@@ -1243,7 +1264,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: url(https://antonbiluta.github.io/img/drupal-logo-2.svg) no-repeat right bottom;
+        background: url(/img/drupal-logo-2.svg) no-repeat right bottom;
         background-size: contain;
         z-index: 10;
     }
@@ -1291,7 +1312,7 @@
     }
     #block-views-block-team-new .block-title {
         text-align: center;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 42px;
         color: #050c33;
@@ -1302,7 +1323,7 @@
         display: flex;
         flex-wrap: wrap;
         text-align: left;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
     }
     #block-views-block-team-new .view-content:after, #block-views-block-team-new .view-content:before {
         width: 0;
@@ -1339,7 +1360,7 @@
     }
     #block-views-block-our-clients {
         margin-bottom: 110px;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
     }
     #block-views-block-our-clients .block-title {
         text-align: center;
@@ -1376,10 +1397,16 @@
         border-radius: 5px;
         align-items: center;
         padding: 5px;
+        min-height: 155px;
+        height: 155px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
     }
     #block-views-block-testimonials-block-1 {
         margin-bottom: 160px;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         background: url(/img/right-quote-sign.svg) no-repeat left top;
         background-size: 26%;
@@ -1505,10 +1532,11 @@
     #block-views-block-testimonials-block-1 .views-field-field-report-text {
         margin-bottom: 28px;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 24px;
         line-height: 1.2;
         color: #050c33;
         outline: 0;
+        text-decoration-line: underline;
     }
     #block-views-block-testimonials-block-1 .views-field-field-report-author {
         font-weight: 500;
@@ -1538,7 +1566,7 @@
     }
     #block-views-block-blog-block-1 .more-link a {
         display: inline-block;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -1557,7 +1585,7 @@
         float: left;
         margin-bottom: 20px;
         min-height: 475px;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         overflow: hidden;
         cursor: pointer;
     }
@@ -1567,7 +1595,7 @@
         float: left;
         margin-bottom: 20px;
         min-height: 475px;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         overflow: hidden;
         cursor: pointer;
     }
@@ -1690,6 +1718,8 @@
         color: #fff;
         background: transparent;
     }
+
+    
     @media (max-width:1300px) {
         .expertise {
             padding: 335px 0 120px;
@@ -2033,7 +2063,7 @@
         position: relative;
         padding: 130px 0 60px;
         color: #fff;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
     }
     .block-main:before {
         content: "";
@@ -2043,7 +2073,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: url(https://antonbiluta.github.io/img/druplicon.svg) no-repeat left top;
+        background: url(/img/druplicon.svg) no-repeat left top;
         background-color: rgba(0, 0, 0, .8);
         z-index: 10;
     }
@@ -2179,156 +2209,12 @@
     }
 }
 
-/*! CSS Used fontfaces */
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BlackItalic.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BlackItalic.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BlackItalic.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BlackItalic.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BlackItalic.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BlackItalic.svg#Montserrat-BlackItalic') format('svg');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Light.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Light.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Light.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Light.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Light.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Light.svg#Montserrat-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Black.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Black.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Black.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Black.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Black.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Black.svg#Montserrat-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBoldItalic.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBoldItalic.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBoldItalic.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBoldItalic.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBoldItalic.svg#Montserrat-ExtraBoldItalic') format('svg');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Thin.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Thin.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Thin.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Thin.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Thin.svg#Montserrat-Thin') format('svg');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBold.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBold.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBold.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBold.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBold.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLight.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLight.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLight.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLight.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLight.svg#Montserrat-ExtraLight') format('svg');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-LightItalic.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-LightItalic.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-LightItalic.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-LightItalic.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-LightItalic.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-LightItalic.svg#Montserrat-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-MediumItalic.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-MediumItalic.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-MediumItalic.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-MediumItalic.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-MediumItalic.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-MediumItalic.svg#Montserrat-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLightItalic.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLightItalic.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLightItalic.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLightItalic.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ExtraLightItalic.svg#Montserrat-ExtraLightItalic') format('svg');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ThinItalic.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ThinItalic.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ThinItalic.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ThinItalic.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ThinItalic.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-ThinItalic.svg#Montserrat-ThinItalic') format('svg');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BoldItalic.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BoldItalic.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BoldItalic.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BoldItalic.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-BoldItalic.svg#Montserrat-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Italic.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Italic.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Italic.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Italic.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Italic.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Italic.svg#Montserrat-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Bold.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Bold.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Bold.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBold.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBold.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Medium.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Medium.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Medium.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBoldItalic.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBoldItalic.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBoldItalic.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBoldItalic.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-SemiBoldItalic.svg#Montserrat-SemiBoldItalic') format('svg');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Regular.eot');
-    src: url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Regular.eot#iefix') format('embedded-opentype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Regular.woff') format('woff'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'), url('https://antonbiluta.github.io/themes/bootstrap_dc/fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Font Awesome 5 Brands';
     font-style: normal;
     font-weight: normal;
-    src: url("https://antonbiluta.github.io/themes/bootstrap_dc/fonts/fontawesome/css/../webfonts/fa-brands-400.eot");
-    src: url("https://antonbiluta.github.io/themes/bootstrap_dc/fonts/fontawesome/css/../webfonts/fa-brands-400.eot#iefix") format("embedded-opentype"), url("https://antonbiluta.github.io/themes/bootstrap_dc/fonts/fontawesome/css/../webfonts/fa-brands-400.woff2") format("woff2"), url("https://antonbiluta.github.io/themes/bootstrap_dc/fonts/fontawesome/css/../webfonts/fa-brands-400.woff") format("woff"), url("https://antonbiluta.github.io/themes/bootstrap_dc/fonts/fontawesome/css/../webfonts/fa-brands-400.ttf") format("truetype"), url("https://antonbiluta.github.io/themes/bootstrap_dc/fonts/fontawesome/css/../webfonts/fa-brands-400.svg#fontawesome") format("svg");
+    src: url("/webfonts/fa-brands-400.eot");
+    src: url("/webfonts/fa-brands-400.eot#iefix") format("embedded-opentype"), url("/webfonts/fa-brands-400.woff2") format("woff2"), 
+    url("/webfonts/fa-brands-400.woff") format("woff"), url("/webfonts/fa-brands-400.ttf") format("truetype"), url("/webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
