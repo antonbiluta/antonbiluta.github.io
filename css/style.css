@@ -1035,15 +1035,15 @@
         bottom: 0;
         opacity: .8;
     }
-    .field--name-field-block-with-form-value form {
+    .field--form-value form {
         width: 480px;
         max-width: 100%;
         margin-left: auto;
     }
-    .field--name-field-block-with-form-value form .form-type-textfield label, .field--name-field-block-with-form-value form .form-type-textarea label, .field--name-field-block-with-form-value form .form-type-email label {
+    .field--form-value form .form-type-textfield label, .field--form-value form .form-type-textarea label, .field--form-value form .form-type-email label {
         display: none;
     }
-    .field--name-field-block-with-form-value form input, .field--name-field-block-with-form-value form textarea {
+    .field--form-value form input, .field--form-value form textarea {
         background: transparent;
         border: 1px solid rgba(256, 256, 256, .3);
         border-radius: 5px;
@@ -1053,42 +1053,42 @@
         padding: 26px 24px;
         color: #fff;
     }
-    .field--name-field-block-with-form-value form input:focus, .field--name-field-block-with-form-value form textarea:focus {
+    .field--form-value form input:focus, .field--form-value form textarea:focus {
         border-color: #f14d34;
         outline: 0;
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #f44336;
     }
-    .field--name-field-block-with-form-value form .form-group {
+    .field--form-value form .form-group {
         margin-bottom: 7px;
     }
-    .field--name-field-block-with-form-value input::-webkit-input-placeholder {
+    .field--form-value input::-webkit-input-placeholder {
         color: #fff;
         font-size: 14px;
     }
-    .field--name-field-block-with-form-value input:-ms-input-placeholder {
+    .field--form-value input:-ms-input-placeholder {
         color: #fff;
         font-size: 14px;
     }
-    .field--name-field-block-with-form-value input::-moz-placeholder {
+    .field--form-value input::-moz-placeholder {
         color: #fff;
         font-size: 14px;
     }
-    .field--name-field-block-with-form-value textarea::-webkit-input-placeholder {
+    .field--form-value textarea::-webkit-input-placeholder {
         color: #fff;
         font-size: 14px;
     }
-    .field--name-field-block-with-form-value textarea:-ms-input-placeholder {
+    .field--form-value textarea:-ms-input-placeholder {
         color: #fff;
         font-size: 14px;
     }
-    .field--name-field-block-with-form-value textarea::-moz-placeholder {
+    .field--form-value textarea::-moz-placeholder {
         color: #fff;
         font-size: 14px;
     }
-    .field--name-field-block-with-form-value .form-type-checkbox {
+    .field--form-value .form-type-checkbox {
         position: relative;
     }
-    .field--name-field-block-with-form-value .form-type-checkbox input {
+    .field--form-value .form-type-checkbox input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
@@ -1096,12 +1096,12 @@
         top: 12px;
         margin: 0;
     }
-    .field--name-field-block-with-form-value .form-type-checkbox label {
+    .field--form-value .form-type-checkbox label {
         padding-left: 38px;
         font-size: 12px;
         color: #fff;
     }
-    .field--name-field-block-with-form-value .form-type-checkbox .custom-checkbox {
+    .field--form-value .form-type-checkbox .custom-checkbox {
         position: absolute;
         top: 0;
         left: 0;
@@ -1111,7 +1111,7 @@
         border: 2px solid rgba(256, 256, 256, .5);
         border-radius: 5px;
     }
-    .field--name-field-block-with-form-value .form-type-checkbox input~.custom-checkbox:after {
+    .field--form-value .form-type-checkbox input~.custom-checkbox:after {
         content: "";
         display: block;
         width: 21px;
@@ -1122,16 +1122,16 @@
         transform: rotateZ(-30deg);
         opacity: 0;
     }
-    .field--name-field-block-with-form-value .form-type-checkbox input:checked~.custom-checkbox:after {
+    .field--form-value .form-type-checkbox input:checked~.custom-checkbox:after {
         opacity: 1;
         transform: initial;
     }
-    .field--name-field-block-with-form-value .form-type-checkbox input:focus~.custom-checkbox {
+    .field--form-value .form-type-checkbox input:focus~.custom-checkbox {
         border-color: #f14d34;
         outline: 0;
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #f44336;
     }
-    .field--name-field-block-with-form-value .btn, .field--name-field-block-with-form-value .btn:focus, .field--name-field-block-with-form-value .btn:active {
+    .field--form-value .btn, .field--form-value .btn:focus, .field--form-value .btn:active {
         background: #f14d34;
         border: 2px solid #f14d34;
         border-radius: 5px;
@@ -1148,7 +1148,7 @@
         line-height: 1;
         transition: background 300ms;
     }
-    .field--name-field-block-with-form-value .btn:hover {
+    .field--form-value .btn:hover {
         background: transparent;
     }
     .competencies {
@@ -1792,7 +1792,7 @@
         #block-views-block-team-new .block-title {
             margin-top: 20px;
         }
-        .field--name-field-block-with-form-value form {
+        .field--form-value form {
             margin-top: 0;
         }
         footer {
@@ -1921,7 +1921,7 @@
         .block-form-contacts .block-form-phone a {
             font-size: 24px;
         }
-        .field--name-field-block-with-form-value form {
+        .field--form-value form {
             margin: auto;
         }
         footer {
@@ -2165,7 +2165,7 @@
         .block-form-contacts .block-form-phone a {
             font-size: 24px;
         }
-        .field--name-field-block-with-form-value form {
+        .field--form-value form {
             margin: auto;
         }
         footer {
@@ -2211,7 +2211,6 @@
         }
     }
 }
-
 
 @font-face {
     font-family: 'Font Awesome 5 Brands';
