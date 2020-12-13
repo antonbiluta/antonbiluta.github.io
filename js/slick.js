@@ -79,4 +79,3 @@ $('#slick-views-our-clients-attachment-1-3-slider').slick({
         }]
 });
 
-

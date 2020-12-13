@@ -538,6 +538,9 @@
     #navbar .navbar-collapse-wrapper {
         float: left;
     }
+    #navbar .rigth{
+        float: right;
+    }
     #navbar .navbar-nav {
         margin-top: 10px;
         margin-left: -15px;
