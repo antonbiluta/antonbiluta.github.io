@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-
-.social-links-wrapper {
-    display: none!important;
-}
 *{
     font-family: 'Montserrat', sans-serif;
 }
-
 @media all {
     .slick-slider {
         position: relative;
@@ -619,6 +614,11 @@
             margin-left: -15px;
             margin-right: -15px;
         }
+        #navbar .rigth{
+            float: none;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
         body #navbar .navbar-collapse {
             border-top: 0;
             border-bottom: 1px solid #fff;
@@ -1192,9 +1192,6 @@
         font-weight: 500;
         font-size: 16px;
         color: #4f5a73;
-    }
-    .advantages {
-        font-family: 'Montserrat', sans-serif;
     }
     .advantages h2 {
         margin-bottom: 55px;

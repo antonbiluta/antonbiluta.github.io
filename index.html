@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drupal Coder</title>
     <link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
     <div>
-
         <!-- навигация -->
         <header class="navbar navbar-default" id="navbar" role="banner">
-            <!-- Контейнер чтобыц огреничивать рамки -->
+            <!-- Контейнер чтобы ограничивать рамки -->
             <div class="container">
                 <!-- голова навигации (там где логотип (логотип это картинка компаниии)) -->
                 <div class="navbar-header">
@@ -55,19 +53,22 @@
                 
                 <div class="rigth">
                     <div class="navbar-collapse collapse">
-                        <nav class="collapse navbar-collapse">
-                            <ul class="menu nav navbar-nav">
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
                                 <li><a href="tel:88002222673" class="phone">8 800 222-26-73</a></li>
-                                <li class="expanded dropdown">
-                                    <a href class="dropdown-toggle lang" data-toggle="dropdown">RU<span
-                                            class="caret"></span></a>
-                                    <ul class="menu dropdown-menu">
-                                        <li><a class="change-lang" href="">En</a></li>
-                                        <li><a class="change-lang" href="">It</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        RU
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="english.html">English</a></li>
+                                        <li><a href="italy.html">Italy</a></li>
+                                        <li role="separator" class="divider"></li>
                                     </ul>
                                 </li>
                             </ul>
-                        </nav>
+                        </div>
                     </div>
                 </div>
                 <!-- ЭТО КНОПКА ДЛЯ МОБИЛЬНОЙ ВЕРСИИ (НАВИГАЦИЯ) -->
@@ -510,11 +511,11 @@
                                                 <div class="tariff-price-description">в час</div>
                                             </div>
                                             <div class="tariff-body">
-                                                <div class="tarrif-body-item">Предоплата от 2 часов</div>
-                                                <div class="tarrif-body-item">Консультации и работы по SEO</div>
-                                                <div class="tarrif-body-item">Услуги дизайнера</div>
-                                                <div class="tarrif-body-item">Стандартное время реакции</div>
-                                                <div class="tarrif-body-item">Неиспользованные оплаченные часы
+                                                <div class="tariff-body-item">Предоплата от 2 часов</div>
+                                                <div class="tariff-body-item">Консультации и работы по SEO</div>
+                                                <div class="tariff-body-item">Услуги дизайнера</div>
+                                                <div class="tariff-body-item">Стандартное время реакции</div>
+                                                <div class="tariff-body-item">Неиспользованные оплаченные часы
                                                     переносятся на следующий месяц</div>
                                             </div>
                                             <div class="tariff-footer">
@@ -534,12 +535,12 @@
                                                 <div class="tariff-price-description">в час</div>
                                             </div>
                                             <div class="tariff-body">
-                                                <div class="tarrif-body-item">Предоплата от 10 часов</div>
-                                                <div class="tarrif-body-item">Консультации и работы по SEO</div>
-                                                <div class="tarrif-body-item">Услуги дизайнера</div>
-                                                <div class="tarrif-body-item">Высокое время реакции - до 2 рабочих дней
+                                                <div class="tariff-body-item">Предоплата от 10 часов</div>
+                                                <div class="tariff-body-item">Консультации и работы по SEO</div>
+                                                <div class="tariff-body-item">Услуги дизайнера</div>
+                                                <div class="tariff-body-item">Высокое время реакции - до 2 рабочих дней
                                                 </div>
-                                                <div class="tarrif-body-item">Неиспользованные часы не переносятся</div>
+                                                <div class="tariff-body-item">Неиспользованные часы не переносятся</div>
                                             </div>
                                             <div class="tariff-footer">
                                                 <a href="#forma" class="contact-form tariff-footer-btn">Оставить
@@ -558,12 +559,12 @@
                                                 <div class="tariff-price-description">в час</div>
                                             </div>
                                             <div class="tariff-body">
-                                                <div class="tarrif-body-item">Предоплата от 100 часов</div>
-                                                <div class="tarrif-body-item">Консультации и работы по SEO</div>
-                                                <div class="tarrif-body-item">Услуги дизайнера</div>
-                                                <div class="tarrif-body-item">Максимальное время реакции - в день
+                                                <div class="tariff-body-item">Предоплата от 100 часов</div>
+                                                <div class="tariff-body-item">Консультации и работы по SEO</div>
+                                                <div class="tariff-body-item">Услуги дизайнера</div>
+                                                <div class="tariff-body-item">Максимальное время реакции - в день
                                                     обращения</div>
-                                                <div class="tarrif-body-item">Неиспользованные часы не переносятся</div>
+                                                <div class="tariff-body-item">Неиспользованные часы не переносятся</div>
                                             </div>
                                             <div class="tariff-footer">
                                                 <a href="#block-podderzhkasaytovkontaktnayaforma"
@@ -706,8 +707,7 @@
             </section>
 
             <!-- Блок команда -->
-            <section class="views-element-container container block block-views block-views-blockteam-team-new clearfix"
-                id="block-views-block-team-new">
+            <section class="views-element-container container block block-views block-views-blockteam-team-new clearfix" id="block-views-block-team-new">
                 <h2 class="block-title">Команда</h2>
                 <div class="form-group">
                     <div class="view view-team view-id-team view-display-id-team_new">
@@ -1225,14 +1225,23 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="slick__slide slide slide--0">
+                                                    <div class="views-field views-field-field-project-logo">
+                                                        <div class="field-content">
+                                                            <picture>
+                                                                <img src="img/Kubsu_logo.png" alt="Ciel parfum"
+                                                                    class="img-responsive" />
+                                                            </picture>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="slick__slide slide slide--1">
                                                     <div class="views-field views-field-field-project-logo">
                                                         <div class="field-content">
                                                             <picture>
-                                                                <img srcset="https://drupal-coder.ru/sites/default/files/styles/our_clients_logo/public/projects/andreyparabellum_ru.png?itok=N099CqvM 1x"
-                                                                    src="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                                    alt="http://andreyparabellum.ru "
-                                                                    typeof="foaf:Image" class="img-responsive" />
+                                                                <img src="/img/logo-estee.png"
+                                                                    alt="http://andreyparabellum.ru"
+                                                                    class="img-responsive" />
                                                             </picture>
                                                         </div>
                                                     </div>
@@ -1241,18 +1250,19 @@
                                                     <div class="views-field views-field-field-project-logo">
                                                         <div class="field-content">
                                                             <picture>
-                                                                <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                                                <source
-                                                                    srcset="https://drupal-coder.ru/sites/default/files/styles/our_clients_logo/public/projects/farbors_ru.jpg.webp?itok=wpKD_m3m 1x"
-                                                                    type="image/webp" />
-                                                                <source
-                                                                    srcset="https://drupal-coder.ru/sites/default/files/styles/our_clients_logo/public/projects/farbors_ru.jpg?itok=wpKD_m3m 1x"
-                                                                    type="image/jpeg" />
-                                                                <!--[if IE 9]></video><![endif]--><img
-                                                                    srcset="https://drupal-coder.ru/sites/default/files/styles/our_clients_logo/public/projects/farbors_ru.jpg?itok=wpKD_m3m 1x"
-                                                                    src="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                                    alt="farbors.ru" typeof="foaf:Image"
-                                                                    class="img-responsive" /></picture>
+                                                                <img src="img/image10.png" alt="farbors.ru"
+                                                                    class="img-responsive" />
+                                                            </picture>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick__slide slide slide--0">
+                                                    <div class="views-field views-field-field-project-logo">
+                                                        <div class="field-content">
+                                                            <picture>
+                                                                <img src="img/Kubsu_logo.png" alt="Ciel parfum"
+                                                                    typeof="foaf:Image" class="img-responsive" />
+                                                            </picture>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1304,10 +1314,6 @@
 
         <footer class="footer" role="contentinfo">
             <div class=" container">
-                <br>
-                <br>
-                <br>
-                <br>
                 <div>
                     <section>
                         <div class="row">
@@ -1332,7 +1338,7 @@
                             </div>
                             <div class="col-md-6 col-xs-12 col-sm-6">
                                 <div class="field field--form-value field--item">
-                                    <form class="forms" action="https://formcarry.com/s/CgT4LGJ8d-" method="post" accept-charset="UTF-8">
+                                    <form class="forms" action="https://formcarry.com/s/Flv4k5JVLF" method="post" accept-charset="UTF-8">
                                         <div class="form-group form-wrapper">
                                             <div class="form-item form-type-textfield form-group">
                                                 <input class="input form-control" type="text" name="Name" placeholder="Ваше имя">
