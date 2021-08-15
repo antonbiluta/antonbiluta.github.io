@@ -1,0 +1,421 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #131214;
+    height: 100vh;
+    position: relative;
+}
+
+.angle1{
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    border-left: 0.2vh solid rgba(255,255,255,0.5);
+    border-bottom: 0.2vh solid rgba(255,255,255,0.5);
+    left: 2.6vh;
+    bottom: 2.6vh;
+}
+
+.angle2{
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    border-top: 0.2vh solid rgba(255,255,255,0.5);
+    border-right: 0.2vh solid rgba(255,255,255,0.5);
+    right: 2.6vh;
+    top: 2.6vh;
+}
+
+.text_right{
+    width: 25vh;
+    position: absolute;
+    color: white;
+    font-weight: normal;
+    font-size: 2.5vh;
+    letter-spacing: 0.115em;
+    right: 2.6vh;
+    bottom: 2.6vh;
+}
+
+.text_right p{
+    display: inline-block;
+    color:#131214;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0 0.3vh;
+}
+
+.text_left{
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.8vh;
+    font-weight: bold;
+    left: 2.6vh;
+    top: 55vh;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.115em;
+}
+.text_left .black{
+    color:#131214;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0.1vh;
+    margin-right: 1vh;
+}
+.triangle-1, .triangle-2, .triangle-3{
+    margin-right: 0.8vh;
+    font-size: 1.2vh;
+}
+.triangle-2{
+    transform: rotate(180deg);
+}
+
+.top-arrows{
+    position: absolute;
+    top: 2vh;
+    width: 100%;
+    height: 3vh;
+}
+.bot-arrows{
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    height: 3vh;
+}
+
+.main-pic{
+    width: 40vh;
+    position: absolute;
+    top: 20vh;
+    left: 22%;
+}
+
+.main-pic .name{
+    color: white;
+    font-weight: 700;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    font-size: 12vh;
+    position: absolute;
+    top: 12vh;
+    left: 50vh;
+}
+.main-pic .subname{
+    color: rgba(255,255,255,0.5);
+    transform: rotate(90deg);
+    transform-origin: top left;
+    font-size: 2vh;
+    position: absolute;
+    top: 15.8vh;
+    left: 48vh;
+    letter-spacing: 0.5vh;
+}
+
+@supports (-webkit-text-stroke: 0.04vh white){
+        .center-text{
+            color:transparent;
+            -webkit-text-stroke: 0.04vh white;
+            width: 60vh;
+            font-size: 15vh;
+            line-height: 11vh;
+            font-weight: 700;
+            position: absolute;
+            top: 0;
+            left: -30vh;
+        }
+        .low{
+            top:44vh;
+        }
+        .main_text .subtitle{
+            font-weight: 700;
+            font-size: 3vh;
+            position: absolute;
+            top: 0.3vh;
+            left: 0.2vh;
+            z-index:-2;
+            color: rgba(99, 0, 0, 1);
+            -webkit-text-stroke: 0.03vh rgba(255, 255, 255, 0.8);
+        }
+    }
+
+.backg, .frong{
+    width: 100%;
+    position: absolute;
+    top: -10vh;
+}
+.backg{
+    height: 45vh;
+    overflow: hidden;
+    top: 5vh;
+}
+
+
+.main_text{
+    color:white;
+    width: 60vh;
+    position: absolute;
+    top: 20vh;
+    right: 30vh;
+}
+.main_text .title{
+    color: rgb(218, 0, 0);
+    font-weight: 700;
+    font-size: 3vh;
+}
+.main_text .main{
+    
+}
+
+
+@media screen and (max-width:1024px){
+    .top-arrows, .bot-arrows{
+        height: 1.4vh;
+    }
+    .angle1, .angle2{
+        height: 2vh;
+        width: 2vh;
+    }
+    .angle1{
+        border-left: 0.1vh solid rgba(255,255,255,0.5);
+        border-bottom: 0.1vh solid rgba(255,255,255,0.5);
+    }
+    .angle2{
+        border-right: 0.1vh solid rgba(255,255,255,0.5);
+        border-top: 0.1vh solid rgba(255,255,255,0.5);
+    }
+    .main-pic{
+        width: 30vh;
+        left: 30vh;
+        top: 10vh;
+    }
+    .center-text{
+        font-size: 10vh;
+        left: -15vh;
+        line-height: 8vh;
+        top:4vh;
+    }
+    .center-text.low{
+        top: 36vh;
+    }
+    .backg, .frong{
+        top: -4vh;
+    }
+    .backg{
+        height: 40vh;
+        top: 9vh;
+    }
+    .backg img{
+        height: 52vh;
+        position: absolute;
+        top: -20vh;
+    }
+    .main-pic .name{
+        font-size: 9vh;
+        top: 20vh;
+        left: 37vh;
+    }
+    .main-pic .subname{
+        font-size: 2vh;
+        top: 23vh;
+        left: 37vh;
+        letter-spacing: 0.5vh;
+    }
+    
+    .main_text{
+        position: absolute;
+        top: 70vh;
+        left: 15vh;
+        width: 50vh;
+    }
+    .main_text{
+        font-weight: 700;
+        font-size: 2vh;
+    }
+
+    .text_right{
+        width: 10vh;
+        font-size: 1vh;
+        letter-spacing: 0.115em;
+        right: 2.6vh;
+        bottom: 2.6vh;
+    }
+
+    .text_left{
+        font-size: 1.4vh;
+        top: 48vh;
+    }
+    .triangle-1, .triangle-2, .triangle-3{
+        margin-right: 0.8vh;
+        font-size: 1.2vh;
+    }
+}
+
+@media screen and (max-width:480px){
+    .top-arrows, .bot-arrows{
+        height: 1vh;
+    }
+    .angle1, .angle2{
+        height: 1.5vh;
+        width: 1.5vh;
+    }
+    .angle1{
+        border-left: 0.02vh solid rgba(255,255,255,0.5);
+        border-bottom: 0.02vh solid rgba(255,255,255,0.5);
+    }
+    .angle2{
+        border-right: 0.02vh solid rgba(255,255,255,0.5);
+        border-top: 0.02vh solid rgba(255,255,255,0.5);
+    }
+    .main-pic{
+        width: 20vh;
+        left: 15vh;
+        top: 8vh;
+    }
+    .center-text{
+        position: relative;
+        width: 5vh;
+        font-size: 5vh;
+        left: -5vh;
+        line-height: 4vh;
+        top: -2vh;
+    }
+    .center-text.low{
+        top: -2vh;
+
+    }
+    .backg, .frong{
+        top: -11vh;
+    }
+    .backg{
+        height: 20vh;
+        top: -1vh;
+    }
+    .backg img{
+        height: 40vh;
+        position: absolute;
+        top: -20vh;
+    }
+    .main-pic .name{
+        font-size: 5vh;
+        top: 6vh;
+        left: 24vh;
+    }
+    .main-pic .subname{
+        font-size: 2vh;
+        top: 7.8vh;
+        left: 25vh;
+        letter-spacing: 0.5vh;
+    }
+    
+    .main_text{
+        position: absolute;
+        top: 36vh;
+        left: 10vh;
+        width: 30vh;
+    }
+    .main_text .title{
+        font-weight: 700;
+        font-size: 2vh;
+    }
+
+    .text_right{
+        width: 10vh;
+        font-size: 0.8vh;
+        letter-spacing: 0.115em;
+        right: 2.6vh;
+        bottom: 2.6vh;
+    }
+
+    .text_left{
+        font-size: 1vh;
+        top: 40vh;
+    }
+    .triangle-1, .triangle-2, .triangle-3{
+        margin-right: 0.8vh;
+        font-size: 0.8vh;
+    }
+}
