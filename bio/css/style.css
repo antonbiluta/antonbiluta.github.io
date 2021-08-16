@@ -126,7 +126,7 @@ body{
 .background-pic{
     width: 50vh;
     height: 55vh;
-    background: url(/newdesign/img/back.png) no-repeat;
+    background: url(/bio/img/back.png) no-repeat;
     background-size: cover;
     background-position: bottom center;
     overflow: hidden;
@@ -134,7 +134,7 @@ body{
 }
 
 .front-pic{
-    background: url(/newdesign/img/anton.png) no-repeat;
+    background: url(/bio/img/anton.png) no-repeat;
     background-size: cover;
     width: 50vh;
     height: 77vh;
@@ -147,7 +147,7 @@ body{
 .front-pic::before{
     content:"";
     position: absolute;
-    background: url(/newdesign/img/anton.png) no-repeat;
+    background: url(/bio/img/anton.png) no-repeat;
     background-size: cover;
     width: 51vh;
     height: 3vh;/* 
@@ -159,7 +159,7 @@ body{
 .front-pic::after{
     content:"";
     position: absolute;
-    background: url(/newdesign/img/anton.png) no-repeat;
+    background: url(/bio/img/anton.png) no-repeat;
     background-size: cover;
     width: 50vh;
     height: 2vh;/* 
