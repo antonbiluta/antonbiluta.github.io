@@ -217,7 +217,7 @@ body{
             top: 0.3vh;
             left: 0.2vh;
             z-index:-2;
-            color: rgba(99, 0, 0, 1);
+            color: transparent;
             -webkit-text-stroke: 0.03vh rgba(255, 255, 255, 0.8);
         }
     }
@@ -242,13 +242,49 @@ body{
     right: 30vh;
 }
 .main_text .title{
-    color: rgb(218, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 3vh;
 }
 .main_text .main{
     
 }
+@supports (-webkit-text-stroke: 0.04vh white){
+    .soc a{
+        font-size: 3vh;
+        color:transparent;
+        -webkit-text-stroke: 0.05vh #ffffff;
+    }
+}
+
+.soc{
+    margin-top: 1.2vh;
+    display: flex;
+    justify-content: space-between;
+}
+.soc .fab{
+    border-radius: 1.4vh;
+    padding: 1vh;
+    border: 0.05vh solid white;
+}
+
+.soc .fab:hover{
+    color:white;
+    border: 0.05vh solid transparent;
+}
+.soc a, .soc a:active, .soc a:hover{
+    text-decoration: none;
+    color: transparent;
+}
+
+.soc .fab:hover.fa-vk{background-color: #4680C2;}
+.soc .fab:hover.fa-instagram{background-color: #E4405F;}
+.soc .fab:hover.fa-linkedin-in{background-color: #0A66C2;}
+.soc .fab:hover.fa-twitter{background-color: #1DA1F2;}
+.soc .fab:hover.fa-github{background-color: #3f3f3f;}
+.soc .fab:hover.fa-gitlab{background-color: #FCA121;}
+.soc .fab:hover.fa-telegram-plane{background-color:#26A5E4;}
+.soc .fab:hover.fa-spotify{background-color: #1DB954;}
 
 
 @media screen and (max-width:1024px){
