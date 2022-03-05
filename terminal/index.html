@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/animations.css" />
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link rel="stylesheet" type="text/css" href="style/switch.css" />
+	<link rel="icon" type="image/png" href="favicon.png" />
     <title>Terminal</title>
-    <link rel="stylesheet" href="css/style.css">
     <script src="terminal.js" type="module"></script>
     <script src="./util/rot.js"></script>
 </head>
 <body class="theme-green" onload="onload()">
     <div id="monitor">
         <div id="screen">
-            <div id="crt" class="off" onclick="handleClick(event)">
+            <div id="crt" class="on" onclick="handleClick(event)">
                 <div class="scanline"></div>
                 <div class="terminal"></div>
             </div>
