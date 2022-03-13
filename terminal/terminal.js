@@ -4,22 +4,25 @@ import { on, off } from "./util/power.js";
 import { toggleFullscreen } from "./util/screens.js";
 import { type } from "./util/io.js";
 
+// Check if query param is set and load that command
 async function onload() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const command = urlParams.get("command");
+	const urlParams = new URLSearchParams(window.location.search);
+	const command = urlParams.get("command");
 
-    if(command) {
-        const { power } = await import("./util/power.js");
-        const { parse } = await import("./util/io.js");
-        power();
-        await type("> "+ command, {initialWait: 3000, finalWait: 1500});
-        await parse(command);
+	if (command) {
+		const { power } = await import("./util/power.js");
+		const { parse } = await import("./util/io.js");
+		power();
+		await type("> " + command, { initialWait: 3000, finalWait: 1500 });
+		await parse(command);
 
-        const { main } = await import("./util/screens.js");
-        main();
-    }
+		const { main } = await import("./util/screens.js");
+		main();
+	}
 }
 
+// Change the command passed to the parse function in order to directly load that command.
+// Then visit /debug.html which calls this function in <body> onLoad().
 async function debug() {
 	const { power } = await import("./util/power.js");
 	const { main } = await import("./util/screens.js");
