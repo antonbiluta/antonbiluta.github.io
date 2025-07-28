@@ -125,20 +125,10 @@
     ⚠️ ТЫ НЕ ЗАТРЕКАЛ 7 ЧАСОВ! ⚠️
   </div>
 
-  <audio id="audio">
+  <audio id="audio" controls autoplay>
     <source src="voice.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
-
-  <script>
-    window.onload = () => {
-      const audio = document.getElementById('audio');
-      audio.play().catch(() => {
-        alert("Нажми OK, чтобы воспроизвести звук");
-        audio.play();
-      });
-    };
-  </script>
 
 </body>
 </html>
