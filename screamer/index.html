@@ -52,18 +52,19 @@
       padding-left: 16px;
     }
 
-    /* Viral Pop-up (big, blinking, transparent over background) */
+    /* Popup */
     .popup {
       position: fixed;
       top: 10%;
       left: 10%;
       width: 80vw;
-      height: 60vh;
+      height: 70vh;
       background-color: red;
       color: white;
-      font-size: 48px;
+      font-size: 36px;
       font-weight: bold;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -71,12 +72,42 @@
       box-shadow: 0 0 50px rgba(255, 0, 0, 0.9);
       animation: flash 0.4s infinite alternate;
       z-index: 9999;
-      pointer-events: none; /* не блокирует фон */
+      pointer-events: auto;
+      padding: 20px;
     }
 
     @keyframes flash {
       0% { background-color: red; color: white; border-color: white; }
       100% { background-color: white; color: red; border-color: red; }
+    }
+
+    .popup img {
+      width: 70%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .play-btn {
+      margin-top: 30px;
+      font-size: 20px;
+      padding: 12px 24px;
+      background-color: black;
+      color: red;
+      border: 3px solid red;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 10000;
+    }
+
+    .arrow {
+      font-size: 24px;
+      margin-top: 12px;
+      animation: bounce 1s infinite alternate;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
     }
   </style>
 </head>
@@ -119,15 +150,34 @@
     </table>
   </div>
 
-  <!-- Big Blinking Pop-up -->
+  <!-- Popup -->
   <div class="popup" id="popup">
-    <img src="jeff.gif" alt="">
-    <audio id="audio" controls autoplay>
-      <source src="voice.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
-    ⚠️ ТЫ НЕ ЗАТРЕКАЛ 7 ЧАСОВ! ⚠️
+    <img src="jeff.gif" alt="Jeff">
+    <div id="popup-text">ТЫ НЕ ЗАТРЕКАЛ 7 ЧАСОВ!</div>
+    <button class="play-btn" onclick="playAudio()">🔊 Воспроизвести сообщение</button>
+    <div class="arrow">⬆ Нажми меня</div>
   </div>
+
+  <audio id="audio" src="voice.mp3" preload="auto"></audio>
+
+  <script>
+    function playAudio() {
+      document.getElementById('audio').play();
+    }
+
+    function getNameFromQuery() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get("name");
+    }
+
+    window.onload = () => {
+      const name = getNameFromQuery();
+      const popupText = document.getElementById('popup-text');
+      if (name) {
+        popupText.textContent = `Вот ты и попался ${name}! Затрекай 7 часов, а то не выплатят зарплату!`;
+      }
+    };
+  </script>
 
 </body>
 </html>
