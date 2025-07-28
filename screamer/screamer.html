@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Учёт времени | Kaiten</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #1E1E1E;
+      color: #E0E0E0;
+    }
+
+    header {
+      background-color: #2C2C2C;
+      padding: 16px 24px;
+      font-size: 18px;
+      font-weight: 500;
+      border-bottom: 1px solid #3a3a3a;
+    }
+
+    .container {
+      padding: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 10px 12px;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #2A2A2A;
+      color: #B0B0B0;
+      font-weight: 500;
+    }
+
+    td {
+      background-color: #1E1E1E;
+    }
+
+    td:first-child, th:first-child {
+      text-align: left;
+      padding-left: 16px;
+    }
+
+    /* Viral Pop-up (big, blinking, transparent over background) */
+    .popup {
+      position: fixed;
+      top: 10%;
+      left: 10%;
+      width: 80vw;
+      height: 60vh;
+      background-color: red;
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 10px solid white;
+      box-shadow: 0 0 50px rgba(255, 0, 0, 0.9);
+      animation: flash 0.4s infinite alternate;
+      z-index: 9999;
+      pointer-events: none; /* не блокирует фон */
+    }
+
+    @keyframes flash {
+      0% { background-color: red; color: white; border-color: white; }
+      100% { background-color: white; color: red; border-color: red; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Учёт времени — июль 2025</header>
+
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Задача</th>
+          <th>Пн</th>
+          <th>Вт</th>
+          <th>Ср</th>
+          <th>Чт</th>
+          <th>Пт</th>
+          <th>Сб</th>
+          <th>Вс</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Интеграция OAuth2 в auth-сервис</td>
+          <td>4ч</td><td>4ч</td><td>—</td><td>6ч</td><td>—</td><td>—</td><td>—</td>
+        </tr>
+        <tr>
+          <td>Рефакторинг UI-компонентов</td>
+          <td>2ч</td><td>3ч</td><td>3ч</td><td>—</td><td>2ч</td><td>—</td><td>—</td>
+        </tr>
+        <tr>
+          <td>Code Review pull-requests</td>
+          <td>1ч</td><td>2ч</td><td>1ч</td><td>2ч</td><td>1ч</td><td>—</td><td>—</td>
+        </tr>
+        <tr>
+          <td>Тестирование e2e на staging</td>
+          <td>—</td><td>—</td><td>2ч</td><td>3ч</td><td>1ч</td><td>—</td><td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Big Blinking Pop-up -->
+  <div class="popup" id="popup">
+    <img src="jeff.gif" alt="">
+    ⚠️ ТЫ НЕ ЗАТРЕКАЛ 7 ЧАСОВ! ⚠️
+  </div>
+
+  <audio id="audio" src="voice.mp3" preload="auto"></audio>
+
+  <script>
+    window.onload = () => {
+      const audio = document.getElementById('audio');
+      audio.play().catch(() => {
+        alert("Нажми OK, чтобы воспроизвести звук");
+        audio.play();
+      });
+    };
+  </script>
+
+</body>
+</html>
